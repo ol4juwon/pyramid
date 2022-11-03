@@ -5,8 +5,8 @@ import React from 'react';
 const PortfolioBalance = ({amount, interest, percent}) => {
   return ( <Box>
     <VStack>
-      <Text >Portfolio Balance</Text>
-      <Text fontSize={30}  fontWeight='600' fontStyle='normal'>${amount ? amount.toFixed(2) : '38,582.62'}</Text>
+      <Text fontFamily='OpenSans-Regular' >Portfolio Balance</Text>
+      <Text fontSize={30} fontFamily='OpenSans-bold'  fontWeight='600' fontStyle='normal'>${amount ? amount.toFixed(2) : '38,582.62'}</Text>
       <Text color="#00FF7F" >{`+${interest? interest : 0.00.toFixed(2)}`}{"("}{`${percent? percent : 0.00.toFixed(2)}`}{`%)`}</Text>
     </VStack>
   </Box>);

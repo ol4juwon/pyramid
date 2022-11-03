@@ -35,6 +35,7 @@ style={style.container}
          <Pie />
     <Text color='black'
     marginLeft={2}
+    fontFamily="OpenSans-regular"
     alignSelf='center'
     >Account Details</Text>
     </HStack>

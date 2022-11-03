@@ -11,11 +11,13 @@ import Round from './src/assets/icons/Round.svg';
 import Challenge from './src/assets/icons/challenge'
 import {IconButton} from 'react-native';
 import {NativeBaseProvider} from 'native-base';
+import { SSRProvider } from '@react-aria/ssr';
 const Stack = createStackNavigator();
 const Tab = createMaterialBottomTabNavigator()
 const App = () => {
   return (
     <NativeBaseProvider>
+      <SSRProvider>
       <NavigationContainer>
         <Stack.Navigator
           screenOptions={{
@@ -27,6 +29,8 @@ const App = () => {
           <Stack.Screen name="Portfolio" component={Portfolio} />
         </Stack.Navigator>
       </NavigationContainer>
+      </SSRProvider>
+  
     </NativeBaseProvider>
   );
 };
